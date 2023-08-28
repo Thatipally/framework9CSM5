@@ -75,9 +75,10 @@ public class BaseClass {
 	}
 	
 	@AfterMethod
-	public void methodTeardown()
+	public void methodTeardown() throws InterruptedException
 	{
 		home.ClickProfileButton();
+		Thread.sleep(2000);
 		home.clickLogout();
 		webUtil.closeAllBrowser();
 	}

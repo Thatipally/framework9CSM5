@@ -33,10 +33,12 @@ public class HomePage {
 	}
 	
 	//Utilization
-	public void ClickProfileButton()
+	public void ClickProfileButton() throws InterruptedException
 	{
 		profileButton.click();
+		Thread.sleep(2000);
 	}
+	
 	public void selectMyProfile()
 	{
 		myProfile.click();
